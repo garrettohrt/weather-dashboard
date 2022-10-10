@@ -22,7 +22,7 @@
                 <h2>Search for a City:</h2>
                 <form>
                     <div class="form-row align-items-center">
-                        <div class="col-8 search-field">
+                        <div class="col-4 search-field">
                             <label class="sr-only">City</label>
                             <input type="text" class="form-control" id="cityName" placeholder="City">
                         </div>
@@ -37,10 +37,10 @@
             </div>
         </section>
 
-        <section class="results-container">
+        <section class="results-container" class="col">
             <div class="current-conditions">
                 <div class="city-searched">
-                    <h3 id="city-name"></h3>
+                    <h3 id="city-name">London</h3>
                 </div>
                 <div>
                     <p class="current-value" id="temp"></p>
@@ -52,7 +52,7 @@
                     <p class="current-value" id="humid"></p>
                 </div>
             </div>
-            <div class="forecast-results">
+            <div class="forecast-results" class="col">
                 <h4>5-Day Forecast:</h4>
                 <div class="container">
                     <div class="row">
@@ -65,6 +65,18 @@
                                     <p class="card-text" id="temp-0"></p>
                                     <p class="card-text" id="wind-0"></p>
                                     <p class="card-text" id="hum-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" >
+                                <div class="card-header">
+                                    <h5 id="day-1"></h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text" id="temp-1"></p>
+                                    <p class="card-text" id="wind-1"></p>
+                                    <p class="card-text" id="hum-1"></p>
                                 </div>
                             </div>
                         </div>
