@@ -18,9 +18,9 @@
 
     <main>
         <section class="search-bar-container">
-            <div class="search-bar-container">
+            <div class="search-bar">
                 <h2>Search for a City:</h2>
-                <form>
+                <form id="search-form">
                     <div class="form-row align-items-center">
                         <div class="col-4 search-field">
                             <label class="sr-only">City</label>
@@ -37,10 +37,10 @@
             </div>
         </section>
 
-        <section class="results-container" class="col">
+        <section class="results-container">
             <div class="current-conditions">
                 <div class="city-searched">
-                    <h3 id="city-name">London</h3>
+                    <h3 id="city-name"></h3>
                 </div>
                 <div>
                     <p class="current-value" id="temp"></p>
@@ -52,12 +52,12 @@
                     <p class="current-value" id="humid"></p>
                 </div>
             </div>
-            <div class="forecast-results" class="col">
+            <div class="forecast-results">
                 <h4>5-Day Forecast:</h4>
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <div class="card" >
+                            <div class="card">
                                 <div class="card-header">
                                     <h5 id="day-0"></h5>
                                 </div>
@@ -69,7 +69,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card" >
+                            <div class="card">
                                 <div class="card-header">
                                     <h5 id="day-1"></h5>
                                 </div>
@@ -81,11 +81,15 @@
                             </div>
                         </div>
 
-            </div>
-             
+                    </div>
+
 
         </section>
     </main>
 </body>
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
 <script src="./assets/js/script.js"></script>
+
 </html>
