@@ -78,7 +78,7 @@ function createSearchHistoryListItem(cityName) {
     searchBtn.textContent = cityName;
     searchBtn.addEventListener("click", (event) => onSearchHistoryClick(event, cityName));
     li.appendChild(searchBtn);
-
+   
     return li;
 }
 
