@@ -41,7 +41,7 @@ function getForecast(cityName) {
                     var singleDay = data.list[i * 8];
                     var forecastWeather = {
                         date: new Date(singleDay.dt * 1000).toLocaleString(),
-                        icon: "http://openweathermap.org/img/wn/" + singleDay.weather[0].icon + "@2x.png",
+                        icon: "http://openweathermap.org/img/wn/" + singleDay.weather[0].icon + ".png",
                         temp: singleDay.main.temp,
                         wind: singleDay.wind.speed,
                         humidity: singleDay.main.humidity
